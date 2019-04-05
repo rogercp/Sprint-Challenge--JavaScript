@@ -60,7 +60,8 @@ console.log(tyrannosaurus.roar());
 
 // ==== Arrays ====
 
-// Given an array of college graduates.  Complete the following requests WITHOUT using any array methods like .forEach(), .map(), .reduce(), .filter()
+// Given an array of college graduates.  Complete the following requests WITHOUT using any array methods like 
+//.forEach(), .map(), .reduce(), .filter()
 
 const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern State College","email":"ctorry0@macromedia.com"},
 {"id":2,"first_name":"Saundra","university":"The School of the Art Institute of Chicago","email":"swhal1@state.gov"},
@@ -79,7 +80,12 @@ const universities = [];
 for(let i=0;i<graduates.length;i++){
   universities.push(graduates[i].university);
 }
-console.log(universities)
+console.log(universities);
+
+const newArr=universities.sort();
+console.log(newArr);
+
+
 
 
 
@@ -101,14 +107,17 @@ console.log(contactInfo);
 
 
 
-/* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
+/* Request 3: Find out how many universities have the string "Uni" included in their name. 
+//Create a new array called uni that contains them all. Log the result. */
+const uni=[];
 for(let i=0;i<universities.length;i++){
-  if(universities[i].length==="Uni"){
-    uni.push([i]);
+  if(universities[i].includes('Uni')){
+    uni.push(universities[i]);
   }
 }
 console.log(uni);
+
+
 
 
 
